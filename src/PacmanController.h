@@ -9,5 +9,8 @@ public:
 	PacmanController(std::shared_ptr<Character> character);
 	virtual ~PacmanController();
 	virtual Move getMove(const GameState& game)override;
+
+private:
+	void setupBehaviorTree();
 };
 
